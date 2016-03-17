@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Input;
 
 class UserController extends Controller
 {
@@ -22,5 +24,16 @@ class UserController extends Controller
 
         return $view;
 
+    }
+
+    public function add(Request $request){
+        $roles = Role::select('name', 'id')->get();
+        $view = view('users.add');
+
+        if($request->isMethod('post')){
+            User::createUserbyRole(Input::all());
+        }
+
+        return $view->with('roles', $roles);
     }
 }

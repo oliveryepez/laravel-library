@@ -6,7 +6,7 @@
     {{ 'Please type any info of the user that you want search'  }}
 @endsection
 @section('page_content')
-    <form class="search-form" method="post" action="/dashboard/users/search">
+    <form class="search-form" method="post" action="/dashboard/user/search">
         <div class="input-group">
             <input type="text" name="search" class="form-control" placeholder="Search">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
