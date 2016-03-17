@@ -44,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="205" column="54" selection-start-line="205" selection-start-column="54" selection-end-line="205" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.86245954">
+              <caret line="160" column="78" selection-start-line="160" selection-start-column="78" selection-end-line="160" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -108,10 +108,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/resources/views/users/search.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.86245954">
+            <state vertical-scroll-proportion="-20.5">
               <caret line="51" column="70" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
               <folding />
             </state>
@@ -166,11 +166,11 @@
         <option value="$PROJECT_DIR$/library/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/library/vendor/laravel/framework/src/Illuminate/Database/Connection.php" />
         <option value="$PROJECT_DIR$/library/composer.json" />
-        <option value="$PROJECT_DIR$/library/config/app.php" />
         <option value="$PROJECT_DIR$/library/app/Http/Controllers/Auth/AuthController.php" />
         <option value="$PROJECT_DIR$/library/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/library/app/Models/User.php" />
         <option value="$PROJECT_DIR$/library/resources/views/users/search.blade.php" />
+        <option value="$PROJECT_DIR$/library/config/app.php" />
       </list>
     </option>
   </component>
@@ -968,14 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="205" column="54" selection-start-line="205" selection-start-column="54" selection-end-line="205" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/app/Events/Event.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1024,8 +1016,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/resources/views/users/search.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86245954">
+        <state vertical-scroll-proportion="-20.5">
           <caret line="51" column="70" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.86245954">
+          <caret line="160" column="78" selection-start-line="160" selection-start-column="78" selection-end-line="160" selection-end-column="78" />
           <folding />
         </state>
       </provider>
