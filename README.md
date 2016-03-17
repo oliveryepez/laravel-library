@@ -29,10 +29,10 @@ Una vez descargados los pre-requisitos siga estos pasos para configurar el ambie
 7. ``` chmod -R 777 /var/www/library/storage/ ```
 8. ``` cd /var/www/library/ ```
 9. ``` php artisan migrate ```
-10. Editar el archivo host a ``` local.cyberfuel.com ```
-    10.1. Windows - ``` cd %systemroot%\system32\drivers\etc\ ```
-    10.2  Mac - cd ``` /private/etc/ ```
-    10.3  Linux - ``` /etc/ ```
+10. Editar el archivo host a ``` local.cyberfuel.com ``` 
+    - Windows - ``` cd %systemroot%\system32\drivers\etc\ ``` 
+    - Mac - cd ``` /private/etc/ ``` 
+    - Linux - ``` /etc/ ``` 
 11. En el browser colocar ``` local.cyberfuel.com```
 12. HAVE FUN!
 
