@@ -23,10 +23,10 @@ Una vez descargados los pre-requisitos siga estos pasos para configurar el ambie
 1. Instalar Virtualbox
 2. Instalar Vagrant
 3. ``` git clone https://github.com/oliveryepez/laravel-library.git ```
-4. ``` cd ruta/donde/esta/clonado/el/repositorio
+4. ``` cd ruta/donde/esta/clonado/el/repositorio ```
 5. ``` vagrant up ```
 6. ``` vagrant ssh ```
-7. ``` chmod -R 777 /var/www/library/storage/
+7. ``` chmod -R 777 /var/www/library/storage/ ```
 8. ``` cd /var/www/library/ ```
 9. ``` php artisan migrate ```
 10. Editar el archivo host a ``` local.cyberfuel.com ```
