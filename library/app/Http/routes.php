@@ -43,10 +43,16 @@ Route::group(['middleware' => ['web', 'auth']], function () {
     Route::group(['prefix' => 'dashboard'], function(){
 
         Route::get('/', 'DashboardController@index');
+
+        //User Routes
+
         Route::get('user/search', 'UserController@search');
         Route::post('user/search', 'UserController@search');
         Route::get('user/add', 'UserController@add');
         Route::post('user/add', 'UserController@add');
+
+        //Roles Routes
+        Route::get('role/search', 'RoleController@search');
 
     });
 
