@@ -58,6 +58,9 @@ Route::group(['middleware' => ['web', 'auth']], function () {
         Route::post('role/add', 'RoleController@add');
         Route::post('role/delete', 'RoleController@delete');
 
+        //Books Routes
+        Route::get('books/', 'BooksController@index');
+
     });
 
 });
