@@ -17,23 +17,28 @@ class Role extends Model
         'details'
     ];
 
+    public static $searchable = [
+        'name',
+        'details'
+    ];
+
     protected $dates = ['created_at, updated_at', 'deleted_at'];
 
     public static function searchByKeyword($keyword){
 
         $terms = explode(" ", $keyword);
 
-        $query = Role::select('*');
+        $roles = Role::select('*');
 
-        foreach(self::$searchble as $column){
+        foreach(self::$searchable as $column){
             foreach($terms as $term){
-                $query->orWhere($column, strtolower($term));
+                $roles = $roles->orWhere($column, "LIKE", "%$term%");
             }
         }
 
-        $users = $query->get();
+        $results = $roles->get();
 
 
-        return $users;
+        return $results;
     }
 }
