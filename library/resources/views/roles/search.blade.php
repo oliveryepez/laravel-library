@@ -109,7 +109,7 @@
                                         <td>{{ ucfirst($role->name) }}</td>
                                         <td>{{ $role->details  }}</td>
                                         <td class="text-center">
-                                            <a class="btn btn-warning btn-xs" id="ln_edit_role">
+                                            <a class="btn btn-warning btn-xs" id="ln_edit_role" data-id="{{ $role->id  }}">
                                                 <i class="fa fa-edit"></i>
                                                 Edit
                                             </a>
@@ -133,7 +133,7 @@
                                                 <i class="fa fa-check"></i>
                                                 Save
                                             </a>
-                                            <a class="btn btn-danger btn-xs" id="btn_cancel_role_info" >
+                                            <a class="btn btn-danger btn-xs" id="btn_cancel_role_info" data-id="{{ $role->id  }}" >
                                                 <i class="fa fa-close"></i>
                                                 Cancel
                                             </a>
@@ -203,9 +203,11 @@
 
                 $(links).each(function(link){
 
+                    var role_id = $(this).data('id');
+
                     $(this).click(function(){
-                        $('#role_info_' + (link + 1)).hide();
-                        $('#frm_role_' + (link + 1)).show();
+                        $('#role_info_' + role_id).hide();
+                        $('#frm_role_' + role_id).show();
                     });
                 });
             },
@@ -240,9 +242,12 @@
                 var cancel_links = $('a#btn_cancel_role_info');
 
                 $(cancel_links).each(function(link){
+
+                    var role_id = $(this).data('id');
+
                     $(this).click(function(){
-                        $('#role_info_' + (link + 1)).show();
-                        $('#frm_role_' + (link + 1)).hide();
+                        $('#role_info_' + role_id).show();
+                        $('#frm_role_' + role_id).hide();
                     });
                 });
             },
