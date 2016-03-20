@@ -39,14 +39,14 @@
                 </a>
             </li>
             <li class="treeview">
-                <a href="#">
+                <a href="/dashboard/books">
                     <i class="fa fa-book"></i> <span>Books</span>
-                    <i class="fa fa-angle-left pull-right"></i>
+                    {{--<i class="fa fa-angle-left pull-right"></i>
                     <ul class="treeview-menu">
                         <li><a href="#"><i class="fa fa-plus"></i> Add Book</a></li>
                         <li><a href="#"><i class="fa fa-edit"></i> Edit Book</a></li>
                         <li><a href="#"><i class="fa fa-minus"></i> Delete Book</a></li>
-                    </ul>
+                    </ul>--}}
                 </a>
             </li>
             <li class="treeview">
