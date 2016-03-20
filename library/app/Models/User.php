@@ -23,7 +23,7 @@ class User extends Authenticatable
         'active'
     ];
 
-    public static $searchble = [
+    public static $searchable = [
         'first_name',
         'last_name',
         'display_name',
@@ -45,18 +45,18 @@ class User extends Authenticatable
 
         $terms = explode(" ", $keyword);
 
-        $query = User::select('*');
+        $users = User::select('*');
 
-        foreach(self::$searchble as $column){
+        foreach(self::$searchable as $column){
             foreach($terms as $term){
-                $query->orWhere($column, strtolower($term));
+                $users = $users->orWhere($column, "LIKE", "%$term%");
             }
         }
 
-        $users = $query->get();
+        $results = $users->get();
 
 
-        return $users;
+        return $results;
     }
 
     public static function userValidator($values){

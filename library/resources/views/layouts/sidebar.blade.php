@@ -9,7 +9,7 @@
             </div>
             <div class="pull-left info">
                 <p></p>
-                <p>{{ Auth::user()->first_name . " " . Auth::user()->last_name }}</p>
+                <p>{{  ucfirst(Auth::user()->first_name) . " " . ucfirst(Auth::user()->last_name) }}</p>
             </div>
         </div>
 
@@ -31,6 +31,7 @@
                     <i class="fa fa-gear"></i> <span>Roles</span>
                     <i class="fa fa-angle-left pull-right"></i>
                     <ul class="treeview-menu">
+                        <li><a href="/dashboard/role/search"><i class="fa fa-search"></i> Search Roles</a></li>
                         <li><a href="#"><i class="fa fa-plus"></i> Add Role</a></li>
                         <li><a href="#"><i class="fa fa-edit"></i> Edit Role</a></li>
                         <li><a href="#"><i class="fa fa-minus"></i> Delete Role</a></li>
