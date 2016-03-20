@@ -1,9 +1,9 @@
 @extends('home')
 @section('page_title')
-    {{ 'Search User'  }}
+    {{ 'Roles'  }}
 @endsection
 @section('page_description')
-    {{ 'Please type any info of the user that you want search'  }}
+    {{ 'Roles system administration'  }}
 @endsection
 @section('page_content')
     <form class="search-form" method="post" action="/dashboard/user/search">
