@@ -1,6 +1,9 @@
 <html>
 <head>
     <title>Cyberfuel Library - @yield('title')</title>
+
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+
     <link href="{{ asset("/assets/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset("/assets/fonts/css/font-awesome.min.css") }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset("/assets/icons/ionic_icons.css") }}" rel="stylesheet" type="text/css" />
@@ -53,6 +56,8 @@
             });
         });
     });
+
 </script>
+@yield('js_scripts')
 </body>
 </html>
