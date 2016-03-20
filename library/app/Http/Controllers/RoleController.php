@@ -11,12 +11,18 @@ use Illuminate\Support\Facades\Log;
 class RoleController extends Controller
 {
 
-
-
     public function search(Request $request){
 
         $roles = Role::all();
-        $view = view('roles.search')->with('roles', $roles);
+        $view = view('roles.search');
+        $keywords = $request->input('role_search');
+
+        if($request->isMethod('post')){
+            $search_result = Role::searchByKeyword($keywords);
+            $view->with('roles', $search_result);
+        }else{
+            $view->with('roles', $roles);
+        }
 
         return $view;
 
