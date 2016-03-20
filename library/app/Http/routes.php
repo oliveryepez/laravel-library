@@ -53,6 +53,7 @@ Route::group(['middleware' => ['web', 'auth']], function () {
 
         //Roles Routes
         Route::get('role/search', 'RoleController@search');
+        Route::post('role/search', 'RoleController@search');
         Route::post('role/edit', 'RoleController@edit');
         Route::post('role/add', 'RoleController@add');
         Route::post('role/delete', 'RoleController@delete');
