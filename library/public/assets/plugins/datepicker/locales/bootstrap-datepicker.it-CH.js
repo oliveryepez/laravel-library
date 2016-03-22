@@ -1,4 +1,7 @@
 /**
+ * Italian (Switzerland) translation for bootstrap-datepicker
+ * Christoph Jossi <c.jossi@ascami.ch>
+ * Based on 
  * Italian translation for bootstrap-datepicker
  * Enrico Rubboli <rubboli@gmail.com>
  */
@@ -10,9 +13,8 @@
 		months: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
 		monthsShort: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"],
 		today: "Oggi",
-		monthsTitle: "Mesi",
 		clear: "Cancella",
 		weekStart: 1,
-		format: "dd/mm/yyyy"
+		format: "dd.mm.yyyy"
 	};
 }(jQuery));
